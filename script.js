@@ -6,7 +6,7 @@ function toggleBox(box) {
     box.classList.add("expanded");
 
 
-     // Get the price of the selected box
+     // to get data price fromm html
      const price = parseFloat(box.getAttribute("data-price"));
 
      // Update the total dynamically
