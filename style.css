@@ -194,3 +194,22 @@ select {
   font-weight: 200;
   letter-spacing: 1px;
 }
+
+/* responsive desgin */
+@media only screen and (max-width: 480px) {
+    .title {
+      font-size: 4vw;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .inner-flex p {
+        padding: 2px 5px;
+        
+      }
+      .price p {
+        font-size:medium;
+        word-spacing: 1px;
+      }
+      .inner-flex label{
+        font-size: small;
+      } 
+  }
