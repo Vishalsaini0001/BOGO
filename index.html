@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunshine Bliss - BOGO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- landing page -->
+    <div class="page1"> 
+
+        <!-- main heading and initial position of the box -->
+      <p class="title">YAY! it's BOGO</p>
+      <div class="boxes">
+
+        <!-- onclick event-listner for toggle the box -->
+        <!-- data-price used for dynamicly chnage the total price in js -->
+        <div class="box" onclick="toggleBox(this)" data-price="10">
+          <div class="box-inner">
+            <div class="unit-selector">
+              <div class="inner-flex">
+                <input type="radio" id="bt" name="btn" />
+                <label for="bt">1 Unit</label>
+
+                <p>10% Off</p>
+              </div>
+              <div class="price">
+                <p>$10.00 USD</p>
+              </div>
+            </div>
+            <div class="bottom-price">
+              <p>Standard price</p>
+              <p><s>$24.00 USD</s></p>
+            </div>
+          </div>
+
+          <!-- size and color selector for expanded box -->
+          <div class="selector-container">
+            <div class="selector-row">
+              <span class="item-number">#1</span>
+              <div class="items">
+                <label for="size-1">Size</label>
+                <select id="size-1">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="items">
+                <label for="color-1">Colour</label>
+                <select id="color-1">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                  <option value="Red">Red</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- second row for selectors -->
+            <div class="selector-row">
+              <span class="item-number">#2</span>
+              <div>
+                <select id="size-2">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div>
+                <select id="color-2">
+                  <option value="Colour">Colour</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+
+        <!-- second box having same functionalities -->
+        <div class="box" onclick="toggleBox(this)" data-price="18">
+          <div class="box-inner">
+            <div class="unit-selector">
+              <div class="inner-flex">
+                <input type="radio" id="bt1" name="btn" />
+                <label for="bt1">2 Unit</label>
+
+                <p>20% Off</p>
+              </div>
+              <div class="price">
+                <p>$18.00 USD</p>
+              </div>
+            </div>
+            <div class="bottom-price">
+              <p>Standard price</p>
+              <p><s>$24.00 USD</s></p>
+            </div>
+          </div>
+
+          <div class="selector-container">
+            <div class="selector-row">
+              <span class="item-number">#1</span>
+              <div class="items">
+                <label for="size-1">Size</label>
+                <select id="size-1">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="items">
+                <label for="color-1">Colour</label>
+                <select id="color-1">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                  <option value="Red">Red</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="selector-row">
+              <span class="item-number">#2</span>
+              <div>
+                <select id="size-2">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div>
+                <select id="color-2">
+                  <option value="Colour">Colour</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- third box having same functionalities -->
+        <div class="box" onclick="toggleBox(this)" data-price="24">
+          <div class="box-inner">
+            <div class="unit-selector">
+              <div class="inner-flex">
+                <input type="radio" id="bt3" name="btn" />
+                <label for="bt3">3 Unit</label>
+
+                <p>30% Off</p>
+              </div>
+              <div class="price">
+                <p>$24.00 USD</p>
+              </div>
+            </div>
+            <div class="bottom-price">
+              <p>Standard price</p>
+              <p><s>$24.00 USD</s></p>
+            </div>
+          </div>
+
+          <div class="selector-container">
+            <div class="selector-row">
+              <span class="item-number">#1</span>
+              <div class="items">
+                <label for="size-1">Size</label>
+                <select id="size-1">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="items">
+                <label for="color-1">Colour</label>
+                <select id="color-1">
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                  <option value="Red">Red</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="selector-row">
+              <span class="item-number">#2</span>
+              <div>
+                <select id="size-2">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div>
+                <select id="color-2">
+                  <option value="Colour">Colour</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- prices and total  -->
+        <div class="bottom-delivery-price">
+          <h3>Free Delivery</h3>
+          <h2>Total : $18.00 USD</h2>
+        </div>
+
+        <!-- cart button  -->
+        <div class="cart-button">
+          <button onclick="greeting()">+ Add to Cart</button>
+        </div>
+
+        <!-- bottom-text -->
+        <div class="Powered-text">
+          <h4><i>@ Powered by Pumper</i></h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
